@@ -5,13 +5,13 @@ pkgdesc="Use hibernate in btrfs fileswap"
 depends=('biglinux-systemd-swap')
 # makedepends=('')
 # conflicts=('')
-pkgver=$(date +%y.%m.%d)
-pkgrel=$(date +%H%M)
+pkgver=24.11.24
+pkgrel=2346
 arch=('any')
 license=('GPL3')
 url="https://github.com/biglinux/$pkgname"
 provides=("$pkgname")
-source=("git+${url}.git")
+source=("git+${url}.git#branch=stable-2024-11-24_20-45")
 md5sums=('SKIP')
 if [ -e "${pkgname}.install" ];then
     install=${pkgname}.install
